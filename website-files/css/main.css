@@ -114,6 +114,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -124,11 +126,13 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.125em;
   margin: 20px 0;
 }
@@ -169,7 +173,7 @@ header {
   padding: 15px 0;
 }
 
-header, .content-wrapper {
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,7 +235,7 @@ footer .contact {
   margin-bottom: 50px;
 }
 
-footer, .social-icons {
+footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -270,6 +274,11 @@ footer .copyright {
 
 .hero-area h1 {
   font-size: 2.25em;
+  font-weight: 500;
+}
+
+.hero-area .content-wrapper {
+  align-items: baseline;
 }
 
 /* Aside */
@@ -284,6 +293,7 @@ aside {
 
 aside .form{
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 input[type=text] {
@@ -362,6 +372,11 @@ input[type=button] {
   margin: 20px 0;
 }
 
+.reviews .content-wrapper {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
 /* ==========================================================================
    About Page
    ========================================================================== */
@@ -372,6 +387,10 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
+}
+
+.mission h2 {
+  margin: 0;
 }
 
 .map figure {
@@ -398,6 +417,11 @@ input[type=button] {
   background-color: #2a423a;
 }
 
+.contact-section h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .contact-content p {
   margin: 0;
 }
@@ -419,7 +443,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 .faq h2 {
@@ -551,7 +575,7 @@ input[type=button] {
   }
 
   header .content-wrapper {
-    width: 100%
+    width: 100%;
     justify-content: space-between;
   }
 
@@ -639,9 +663,9 @@ input[type=button] {
 
   footer .footer-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   footer .contact {
